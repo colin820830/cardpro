@@ -1,0 +1,238 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Noto Sans TC", sans-serif;
+}
+
+footer div p {
+  margin-top: 1rem;
+  text-align: center;
+}
+
+main form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+main h2 {
+  margin-top: 1rem;
+}
+
+main section.stamps {
+  display: flex;
+  text-align: center;
+  width: 90%;
+  min-height: 30vh;
+  flex-wrap: wrap;
+}
+
+main section.stamps div.stamp {
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  justify-content: space-around;
+  padding: 1rem;
+  flex: 1 1 100px;
+}
+
+main section.cards {
+  display: flex;
+  text-align: center;
+  min-height: 50vh;
+  flex-wrap: wrap;
+}
+
+main section.cards div.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 1rem;
+  flex: 1 1 400px;
+}
+
+main section.cards div.card label div img {
+  width: 30vw;
+  height: 21vw;
+}
+
+main div button {
+  margin-top: 1rem;
+}
+
+@media screen and (max-width: 550px) {
+  main section.cards div.card label div img {
+    width: 60vw;
+    height: 42vw;
+  }
+}
+
+/* 
+writecard 
+*/
+
+main.writecard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+main section.makecard {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 90%;
+  background-color: orange;
+}
+
+main section.makecard div.cardbox-left {
+  /* background-color: orange; */
+  min-height: 40vw;
+  flex: 1 1 400px;
+}
+
+main section.makecard div.cardbox-left img {
+  margin-top: 1rem;
+  margin-left: 1rem;
+  width: 45vw;
+  height: 32vw;
+}
+
+main section.makecard div.cardbox-right {
+  /* background-color: orange; */
+  min-height: 40vw;
+  flex: 1 1 400px;
+  position: relative;
+}
+
+.Receive_Name_Input {
+  position: absolute;
+  top: 3rem;
+  left: 1rem;
+}
+
+.Send_Name_Input {
+  position: absolute;
+  bottom: 3rem;
+  right: 2rem;
+}
+
+.shung_ye_content {
+  width: 15vw;
+  height: 15vw;
+  position: absolute;
+  top: 1rem;
+  right: 5rem;
+}
+
+.post_Card_content {
+  width: 8vw;
+  height: 10vw;
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+}
+
+.content {
+  resize: none;
+  height: 15vw;
+}
+
+.card_content {
+  position: absolute;
+  top: 15vw;
+  left: 3.5vw;
+
+  width: 35vw;
+}
+
+::placeholder {
+  color: white;
+  opacity: 1; /* Firefox */
+}
+
+.input-in-card {
+  font-size: 22px;
+  width: 180px;
+  color: white;
+  background-color: transparent;
+  outline: none;
+  border: 1px;
+  border-bottom-style: solid;
+  border-top-style: none;
+  border-left-style: none;
+  border-right-style: none;
+  border-color: white;
+}
+
+.mail_message {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+}
+
+.mail {
+  display: flex;
+  text-align: center;
+  width: 100%;
+  margin-top: 1rem;
+}
+
+div.mail_message div.mail label {
+  flex: 1 1 400px;
+}
+
+div.mail_message div.mail div {
+  flex: 1 1 1000px;
+}
+
+@media screen and (max-width: 920px) {
+  main section.makecard div.cardbox-left img {
+    margin-top: 1rem;
+    margin-left: 2rem;
+    width: 55vw;
+    height: 39vw;
+  }
+
+  .Receive_Name_Input {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+  }
+
+  .Send_Name_Input {
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+  }
+
+  .shung_ye_content {
+    width: 20vw;
+    height: 20vw;
+    position: absolute;
+    top: 1rem;
+    right: 6rem;
+  }
+
+  .post_Card_content {
+    width: 12vw;
+    height: 15vw;
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+  }
+
+  .card_content {
+    position: absolute;
+    top: 15vw;
+    left: 3.5vw;
+
+    width: 35vw;
+    /* height: 15vw; */
+  }
+
+  .content {
+    height: 23vw;
+  }
+}
